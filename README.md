@@ -1,6 +1,6 @@
 # INERTES — Chuva de Ferro
 
-Protótipo de RPG de ação 2D criado por Gustavo Lameiras. Em uma cidade devastada por uma revolta das máquinas, dois sobreviventes recuperam recursos e se fundem a robôs para enfrentar a ameaça.
+Protótipo de RPG de ação 2D criado por Gustavo Lameiras e Victor Mattheu. Em uma cidade devastada por uma revolta das máquinas, dois sobreviventes recuperam recursos e se fundem a robôs para enfrentar a ameaça.
 
 ![Depósito de sucata](assetscenarios/deposito.png)
 
