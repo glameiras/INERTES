@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://cssnmxxder3i"]
+
+[ext_resource type="Script" uid="uid://hl0mj2vca431" path="res://scripts/jogo.gd" id="1"]
+[ext_resource type="Script" uid="uid://cl1t77gub4yak" path="res://scripts/mundo.gd" id="2"]
+[ext_resource type="Script" uid="uid://ci3ax4ejvrad8" path="res://scripts/nucleo.gd" id="3"]
+[ext_resource type="PackedScene" path="res://cenas/inerte.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://cenas/jogador.tscn" id="5"]
+[ext_resource type="Script" uid="uid://bdpufvvoh6wul" path="res://scripts/efeitos.gd" id="6"]
+[ext_resource type="PackedScene" path="res://cenas/hud.tscn" id="7"]
+[ext_resource type="Texture2D" uid="uid://6uhpn2qn2d4h" path="res://assetscenarios/rua_devastada.png.png" id="8_5vw27"]
+
+[node name="Jogo" type="Node2D" unique_id=380494350]
+script = ExtResource("1")
+
+[node name="Mundo" type="Node2D" parent="." unique_id=1557092169]
+visible = false
+script = ExtResource("2")
+
+[node name="Nucleo" type="Node2D" parent="." unique_id=1819012230]
+script = ExtResource("3")
+
+[node name="Inerte" parent="." unique_id=372019238 instance=ExtResource("4")]
+
+[node name="Inimigos" type="Node2D" parent="." unique_id=1821535461]
+
+[node name="Jogador" parent="." unique_id=394105196 instance=ExtResource("5")]
+
+[node name="Efeitos" type="Node2D" parent="." unique_id=886644929]
+script = ExtResource("6")
+
+[node name="Camera" type="Camera2D" parent="." unique_id=1812492806]
+limit_left = 0
+limit_top = 0
+limit_right = 1600
+limit_bottom = 941
+
+[node name="Interface" type="CanvasLayer" parent="." unique_id=2057990453]
+
+[node name="Hud" parent="Interface" unique_id=138234830 instance=ExtResource("7")]
+
+[node name="cenario" type="Sprite2D" parent="." unique_id=2115518162]
+z_index = -10
+texture_filter = 2
+texture = ExtResource("8_5vw27")
+centered = false

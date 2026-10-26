@@ -1,0 +1,11 @@
+# Godot: cache local e builds
+.godot/
+exports/
+export_credentials.cfg
+# Temporários e sistema
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+.env
+.env.*
